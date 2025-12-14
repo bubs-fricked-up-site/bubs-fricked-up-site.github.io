@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "fs-tahoma-8px";
+  src: url("fs-tahoma-8px.otf.woff2") format("woff2");
+}
+
+body {
+	background: #ffd;
+	font-family: fs-tahoma-8px, Tahoma, sans-serif
+}
+h1 {
+	color: #550;
+}
+
+div.flex-container {
+  display: flex;
+  /* Show the flex items horizontally */
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
